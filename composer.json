@@ -1,0 +1,17 @@
+{
+    "name": "redicon/hello",
+    "description": "Testowa paczka z hello world",
+    "type": "composer-plugin",
+    "authors": [{
+        "name": "Tomasz Cwik",
+        "email": "tomek@redicon.pl"
+    }],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Redicon\\Hello\\HelloServiceProvider"
+            ]
+        }
+    }
+}
