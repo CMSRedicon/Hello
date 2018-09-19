@@ -9,7 +9,7 @@ class HelloController extends Controller
 {
     public function index(){
 
-       $message = "Wiadomość z paczki Redicon/Hello";
+       $message = "Wiadomość z paczki Redicon/Hello wersja 2.0";
       return view('hello::index', compact('message'));
     }
 }
