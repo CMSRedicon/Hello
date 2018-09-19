@@ -1,14 +1,31 @@
 {
     "name": "redicon/hello",
+    "license": "MIT",
     "description": "Testowa paczka z hello world",
-    "type": "composer-plugin",
+    "homepage": "https://redicon.pl",
+    "type": "library",
     "authors": [{
         "name": "Tomasz Cwik",
         "email": "tomek@redicon.pl"
     }],
-    "require": {},
+    "require": {
+        "php": "^7.0"
+    },
     "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Redicon\\Hello\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Redicon\\Hello\\": "src/"
+        }
+    },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
         "laravel": {
             "providers": [
                 "Redicon\\Hello\\HelloServiceProvider"
