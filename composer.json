@@ -11,8 +11,7 @@
     "require": {
         "php": "^7.0"
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Redicon\\Hello\\": "src/"
